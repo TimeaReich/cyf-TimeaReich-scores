@@ -1,17 +1,20 @@
 //import React from "react";
 
 const CountryScores = (props) => {
-  console.log(props.scores);
   const countryScore = props.scores;
   return countryScore.map((item) => (
-    <div>
+    <div className="table-container">
       <h3>High Scores: {item.name}</h3>
       <table className="table">
-        <tbody>
+        <tbody className="table-body">
           {item.scores.map((item) => (
             <tr>
-              <th scope="row">{item.n}</th>
-              <th scope="row">{item.s}</th>
+              <th className="table-rows" scope="row">
+                {item.n}
+              </th>
+              <th className="table-rows" scope="row">
+                {item.s}
+              </th>
             </tr>
           ))}
         </tbody>

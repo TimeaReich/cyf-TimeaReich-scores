@@ -4,7 +4,6 @@ import allCountryScores from "./AllCountryScores.js";
 import CountryScores from "./CountryScores.js";
 
 function App() {
-  console.log(allCountryScores);
   let score = allCountryScores;
   return (
     <div className="App">
