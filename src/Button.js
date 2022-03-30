@@ -1,13 +1,11 @@
 import React from "react";
 
 const Button = (props) => {
-  const setDescending = props.setDescending;
   const descending = props.descending;
+  const setDescending = props.setDescending;
   const ascending = props.ascending;
   const setAscending = props.setAscending;
 
-  console.log(ascending);
-  console.log(descending);
   function changeOrder() {
     setAscending(() => {
       return ascending * -1;
