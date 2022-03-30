@@ -36,6 +36,9 @@
     transform: rotate(360deg);
   }
 }
+h2 {
+  font-size: 2em;
+}
 .table-rows {
   padding: 10px 0;
 }
@@ -48,4 +51,16 @@
   width: 300px;
   margin-bottom: 2rem;
   border: 5px solid greenyellow;
+}
+.score-order-button {
+  border-radius: 20px;
+  background-color: rgb(206, 248, 142);
+  border: none;
+  padding: 10px;
+  margin-top: 2rem;
+  font-size: 18px;
+}
+.score-order-button:hover {
+  background-color: rgb(252, 154, 255);
+  box-shadow: 2px 8px 10px rgb(0, 0, 0, 12%);
 }

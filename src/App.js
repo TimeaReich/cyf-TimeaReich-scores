@@ -4,6 +4,7 @@ import allCountryScores from "./AllCountryScores.js";
 import CountryScores from "./CountryScores.js";
 import Button from "./Button";
 import React, { useState } from "react";
+import WorldWideScores from "./WorldWideScores";
 
 function App() {
   let score = allCountryScores;
@@ -19,7 +20,9 @@ function App() {
           setDescending={setDescending}
           descending={descending}
         />
-        <h1>High Scores per Country</h1>
+        <h1>High Scored World-Wide</h1>
+        <WorldWideScores scores={score} />
+        <h2>High Scores per Country</h2>
         <CountryScores
           ascending={ascending}
           descending={descending}

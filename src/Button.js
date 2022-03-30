@@ -14,6 +14,10 @@ const Button = (props) => {
       return descending * -1;
     });
   }
-  return <button onClick={changeOrder}>Change Score Order</button>;
+  return (
+    <button className="score-order-button" onClick={changeOrder}>
+      Change Score Order
+    </button>
+  );
 };
 export default Button;
